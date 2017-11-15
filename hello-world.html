@@ -6,6 +6,9 @@
 <meta charset="utf-8">
 <title>Hello...</title>
 <style type="text/css">
+html {
+	background-color: #E3F0FB;
+}
 #mainContent {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: xx-large;
@@ -14,6 +17,7 @@
 	border-radius: 4px;
 	padding: 10px;
 	text-align: center;
+	height: 100%;
 }
 .buttonStyle {
 	border-radius: 4px;
@@ -44,19 +48,8 @@
 
 <body>
 <div id="mainContent">
-<p id="helloText">?</p>
-<button id="clickButton" class="buttonStyle">click me</button>
+	<p>Hello, ScriptEd!</p>
 </div>
-<script> 
-var myButton = document.getElementById("clickButton");
-var myText = document.getElementById("helloText");
-
-myButton.addEventListener('click', doSomething, false)
-
-function doSomething() {
-	myText.textContent = "hello, world!";
-}
-</script>
 
 </body>
 </html>
